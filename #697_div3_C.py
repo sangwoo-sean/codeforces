@@ -1,3 +1,29 @@
+### 다른정답해설
+# from collections import Counter
+# import sys
+# input = sys.stdin.readline
+
+# def nC2(n):
+#     return n*(n-1)//2
+
+# for _ in range(int(input())):
+#     a, b, k = map(int, input().split())
+#     boys = list(map(int, input().split()))
+#     girls = list(map(int, input().split()))
+
+#     bc = Counter(boys)
+#     gc = Counter(girls)
+
+#     total = nC2(k) # 모든 경우의 수 : 주어진 모든 쌍에서 2쌍을 고르는 수
+#     bad = 0
+#     for i in range(a):
+#         bad += nC2(bc[i+1]) # 중복되는 두쌍을 고르는 수
+#     for i in range(b):
+#         bad += nC2(gc[i+1]) # 중복되는 두쌍을 고르는 수
+
+#     print(total - bad)
+
+
 ## 정답해설
 import sys
 input = sys.stdin.readline
